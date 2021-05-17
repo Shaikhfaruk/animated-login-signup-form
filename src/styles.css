@@ -1,0 +1,342 @@
+@import url("https://fonts.googleapis.com/css2?family=Pangolin&family=Playfair+Display:ital@1&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #fff;
+  width: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  background: #000;
+  overflow: hidden;
+  flex-wrap: wrap;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: "Pangolin", cursive;
+}
+.navbar_main {
+  display: flex;
+  grid-template-columns: auto auto auto auto auto auto;
+  grid-gap: 10px;
+  height: 7vh;
+  grid-auto-flow: column;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding: 5px 5px;
+  border-radius: 5px;
+}
+.navbar_items1 {
+  padding: 0 40vw 0 2vw;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.navbar_items2,
+.navbar_items3 {
+  position: relative;
+  margin: 5px;
+  border: solid 0.2rem #59d8d8;
+  border-radius: 0.7rem;
+  height: 7vh;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  display: flex;
+}
+.logSign {
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+/* login card start */
+
+.gradient-border {
+  top: 5em;
+  --border-width: 0.5rem;
+  width: 55%;
+  height: auto;
+  flex-direction: column;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(0, 0, 0);
+  /* opacity: .7; */
+  border-radius: var(--border-width);
+}
+
+.gradient-border::after {
+  position: absolute;
+  content: "";
+  top: calc(-1 * var(--border-width));
+  left: calc(-1 * var(--border-width));
+  z-index: -1;
+  width: calc(100% + var(--border-width) * 2);
+  height: calc(100% + var(--border-width) * 2);
+  background: linear-gradient(
+    60deg,
+    #5f86f2,
+    #a65ff2,
+    #f25fd0,
+    #f25f61,
+    #f2cb5f,
+    #abf25f,
+    #5ff281,
+    #5ff2f0
+  );
+  background-size: 300% 300%;
+  background-position: 0 50%;
+  border-radius: calc(2 * var(--border-width));
+  animation: moveGradient 4s alternate infinite;
+}
+
+@keyframes moveGradient {
+  50% {
+    background-position: 100% 50%;
+  }
+}
+.login-card {
+  padding: 32px 32px;
+  box-sizing: border-box;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  height: 100%;
+  max-height: 740px;
+  max-width: 400px;
+  flex-direction: column;
+}
+
+.login-card-content {
+  flex-grow: 2;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+.login-card-footer {
+  padding: 32px 0;
+}
+h2 .highlight {
+  color: #0bffca;
+}
+h2 .highlight1 {
+  color: #ff0b7d;
+}
+h2 {
+  font-size: 2rem;
+  margin: 0;
+  padding: 0 0 29px 0;
+}
+
+.btn-grad {
+  background-image: linear-gradient(
+    to right,
+    #ff0084 0%,
+    #1685d0 51%,
+    #ff0084 100%
+  );
+}
+.btn-grad {
+  margin: 10px;
+  padding: 12px 0;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  display: block;
+  width: 95%;
+}
+
+.btn-grad:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.form-field {
+  margin-bottom: 16px;
+  width: 100%;
+  position: relative;
+}
+
+.form-field .icon {
+  position: absolute;
+  background: white;
+  color: #d61e2d;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  width: 2.2rem;
+  height: 2.2rem;
+  justify-content: center;
+  border-radius: 20px;
+}
+
+.form-field .icon:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border: 12px solid transparent;
+  border-left: 13px solid white;
+  position: absolute;
+  top: 6px;
+  right: -20px;
+}
+
+.form-field input {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: center;
+  width: 100%;
+  border-radius: 16px;
+  height: 36px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  outline: none;
+  transition: all 0.2s;
+}
+
+.form-field input::placeholder {
+  color: white;
+}
+
+.form-field input:hover,
+.form-field input:focus {
+  background: white;
+  color: #d61e2d;
+  transition: all 0.2s;
+}
+
+.form-field input:hover::placeholder {
+  color: #d61e2d;
+}
+.fa {
+  color: #d61e2d;
+  font-size: 1.1rem;
+}
+/* .glowing background start*/
+.glowing {
+  position: relative;
+  min-width: 350px;
+  height: 110px;
+  margin: -150px;
+  transform-origin: right;
+  animation: colorChange 8s linear infinite;
+}
+.glowing:nth-child(even) {
+  transform-origin: left;
+}
+
+@keyframes colorChange {
+  0% {
+    filter: hue-rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.glowing span {
+  position: absolute;
+  top: calc(80px * var(--i));
+  left: calc(80px * var(--i));
+  bottom: calc(80px * var(--i));
+  right: calc(80px * var(--i));
+}
+.glowing span:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -8px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+.glowing span:nth-child(3n + 1):before {
+  background: rgba(134, 255, 0, 1);
+  box-shadow: 0 0 20px rgba(134, 255, 0, 1), 0 0 40px rgba(134, 255, 0, 1),
+    0 0 60px rgba(134, 255, 0, 1), 0 0 60px rgba(134, 255, 0, 1),
+    0 0 0 8px rgba(134, 255, 0, 0.1);
+}
+.glowing span:nth-child(3n + 2):before {
+  background: rgba(255, 214, 0, 1);
+  box-shadow: 0 0 20px rgba(255, 214, 0, 1), 0 0 40px rgba(255, 214, 0, 1),
+    0 0 60px rgba(255, 214, 0, 1), 0 0 60px rgba(255, 214, 0, 1),
+    0 0 0 8px rgba(255, 214, 0, 0.1);
+}
+.glowing span:nth-child(3n + 3):before {
+  background: rgba(0, 226, 255, 1);
+  box-shadow: 0 0 20px rgba(0, 226, 255, 1), 0 0 40px rgba(0, 226, 255, 1),
+    0 0 60px rgba(0, 226, 255, 1), 0 0 60px rgba(0, 226, 255, 1),
+    0 0 0 8px rgba(0, 226, 255, 0.1);
+}
+
+.glowing span:nth-child(3n + 1) {
+  animation: animate 10s alternate infinite;
+}
+
+.glowing span:nth-child(3n + 2) {
+  animation: animate-reverse 5s alternate infinite;
+}
+
+.glowing span:nth-child(3n + 3) {
+  animation: animate 8s alternate infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes animate-reverse {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* responsive media query start */
+
+@media only screen and (min-width: 320px) {
+  .gradient-border {
+    width: 70%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .gradient-border {
+    width: 65%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .gradient-border {
+    width: 60%;
+  }
+}
+@media only screen and (min-width: 1198px) {
+  .gradient-border {
+    width: 40%;
+  }
+}
