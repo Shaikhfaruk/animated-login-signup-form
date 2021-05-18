@@ -14,7 +14,7 @@ const Menu = () => {
         >
           Home
         </NavLink>
-        <NavLink
+        {/* <NavLink
           exact
           activeClassName="active_class"
           className="navbar_items2"
@@ -30,7 +30,7 @@ const Menu = () => {
           to="/login"
         >
           Login
-        </NavLink>
+        </NavLink> */}
       </div>
     </>
   );

@@ -61,6 +61,36 @@ a {
   outline: none;
 }
 
+.doremon {
+  padding: 0.5rem;
+  margin: 2rem;
+  height: 150px;
+  width: 150px;
+  border-radius: 20px;
+  background: linear-gradient(145deg, #028bdc, #0275b9);
+  box-shadow: 7px 7px 14px #0272b5, -7px -7px 14px #0292e7;
+}
+.profile {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  background-color: #0282ce;
+}
+p {
+  padding: 1.5rem;
+  margin: 1rem;
+  width: 60%;
+  text-align: center;
+  justify-content: center;
+  border-radius: 20px;
+  background: #0282ce;
+  box-shadow: 7px 7px 14px #0272b5, -7px -7px 14px #0292e7;
+}
+
 /* login card start */
 
 .gradient-border {
@@ -337,6 +367,6 @@ h2 {
 }
 @media only screen and (min-width: 1198px) {
   .gradient-border {
-    width: 40%;
+    width: 30%;
   }
 }
